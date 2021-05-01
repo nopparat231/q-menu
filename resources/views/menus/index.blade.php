@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout.app')
 
 @section('content')
 
@@ -18,7 +18,8 @@
                         </div>
                     </div>
                 </div>
-                @foreach ($menu as $key => $value)
+                
+                @foreach ($data as $key => $value)
 
                 <div class="card mb-3" style="max-width: 540rem;">
                     <div class="row g-0">

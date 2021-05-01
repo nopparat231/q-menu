@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,4 @@ Route::get('/', function () {
 });
 
 Route::resource('posts', PostController::class);
-Route::resource('menu', PostController::class);
+Route::resource('menus', MenuController::class);
